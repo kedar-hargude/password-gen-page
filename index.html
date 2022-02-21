@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Password Generator</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="password-container">
+		<div class="password-header">
+			<div class="password-box">
+				a5%&**&^F*979879)(*)
+				<button>Copy to Clipboard!</button>
+			</div>
+		</div>
+		<div class="password-body">
+			<div class="password-format">
+				<label for="length">Character Length</label>
+				<input id="length" type="number" min="5" max="30">
+			</div>
+			<div class="password-format">
+				<label for="upper">Contain Uppercase letters</label>
+				<input id="upper" type="checkbox">
+			</div>
+			<div class="password-format">
+				<label for="lower">Contain Lowercase letters</label>
+				<input id="lower" type="checkbox">
+			</div>
+			<div class="password-format">
+				<label for="number">Contain Numbers</label>
+				<input id="number" type="checkbox">
+			</div>
+			<div class="password-format">
+				<label for="symbol">Contain Symbols</label>
+				<input id="symbol" type="checkbox">
+			</div>
+			<button class="generate" id="generate">Generate password</button>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>

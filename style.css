@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffb3de;
+    color: white;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.password-container{
+    min-width: 400px;
+    background-color: rgb(68, 29, 107);
+    box-shadow: 0 4px 10px rgb(0, 0, 0, 0.5);
+}
+
+.password-header{
+    padding: 1rem;
+}
+
+.password-box{
+    height: 70px;
+    background-color: rgb(140, 84, 196);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.password-box button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(0, 50%);
+    transition: opacity 0.2s ease;
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-family: inherit;
+    font-size: 1rem;
+    opacity: 0;
+}
+
+.password-box:hover button{
+    opacity: 1;
+    transition: 0.5s ease-out;
+    transform: translate(0, 70%);
+    cursor: pointer;
+}
+
+.password-body{
+    padding: 0 1rem 1rem;
+
+}
+
+.password-format{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem;
+}
+
+.generate{
+    display: block;
+    background-color: yellow;
+    color: rebeccapurple;
+    font-weight: bold; 
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 0.75rem;
+}
